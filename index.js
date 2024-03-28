@@ -30,3 +30,5 @@ app.post('/tshirt/:id', (req, res) => {
         tshirt: `👕 with your ${logo} and ID of ${id}`,
     });
 });
+
+module.exports = app;
