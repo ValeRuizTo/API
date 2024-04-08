@@ -14,6 +14,7 @@ app.get('/tshirt', (req, res) => {
         tshirt: 'one',
         size: 'large'
     })
+    res.send("Im working");
 });
 
 
