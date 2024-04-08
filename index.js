@@ -18,10 +18,8 @@ app.get('/tshirt', (req, res) => {
 
 
 app.get('/:id', (req, res) => { 
-
-    const UserID = req.params.id;
  
-    res.send(`Listing user with ID ${userID}`);
+    res.send(`Listing user with ID ${id}`);
     
 });
 
