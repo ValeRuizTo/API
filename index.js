@@ -21,7 +21,7 @@ app.get('/tshirt/:id', (req, res) => {
 
     const UserID = req.params.id;
  
-    res.send(`Listing user with ID ${userID}`)
+    res.send(`Listing user with ID ${UserID}`)
 });
 
 module.exports = app;
