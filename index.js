@@ -19,8 +19,7 @@ app.get('/tshirt', (req, res) => {
 
 app.post('/tshirt/:id', (req, res) => { 
 
-    const { id } = req.params;
-
+    const { id } = req.params.id;
  
     res.send({
         tshirt: `one with your ID of ${id}`,
