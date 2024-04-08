@@ -17,10 +17,11 @@ app.get('/tshirt', (req, res) => {
 });
 
 
-app.get('/:id', (req, res) => { 
+app.get('/tshirt/:id', (req, res) => { 
+
+    const UserID = req.params.id;
  
-    res.send(`Listing user with ID ${id}`);
-    
+    res.send(`Listing user with ID ${userID}`)
 });
 
 module.exports = app;
