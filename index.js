@@ -14,21 +14,16 @@ app.get('/tshirt', (req, res) => {
         tshirt: 'one',
         size: 'large'
     })
-    res.send("Im working");
 });
 
 
 app.post('/tshirt/:id', (req, res) => { 
 
     const { id } = req.params;
-    const { logo } = req.body;
 
-    if (!logo) {
-        res.status(418).send({ message:'we need a logo' })
-    }
-
+ 
     res.send({
-        tshirt: `one with your ${logo} and ID of ${id}`,
+        tshirt: `one with your ID of ${id}`,
     });
 });
 
